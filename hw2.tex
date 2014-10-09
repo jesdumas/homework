@@ -1,0 +1,111 @@
+% aa405 introduction to aerospace plasmas hw2 due 10/10/2014 
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+% change margins to 3/4"
+\usepackage[margin=0.75in]{geometry}
+
+\author{Jesse Dumas}
+\title{AA405 Homework 2: Electromagnetism Strikes Back}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\paragraph{Problem 1}
+
+% Biot-Savart equation
+\begin{equation}
+\vec{B}(r) = 
+\frac{\mu_{0}}{4\pi} 
+\int \frac{\vec{J}(r^{\prime})
+\times \hat R}{|R|^{2}} \,
+\mathrm{d}V
+\end{equation}
+% take curl of each side
+\begin{equation}
+\nabla \times \vec{B}(r) = 
+\frac{\mu_{0}}{4\pi} \int \nabla \times 
+\frac{\vec{J}(r^{\prime})\times 
+\hat R}{|R|^{2}} \, 
+\mathrm{d}V
+\end{equation}
+% make a substitution
+\begin{equation}
+\frac{\hat R}{\lvert R \rvert^{2}} = -\nabla^{2} \frac{1}{R}
+\end{equation}
+
+\paragraph{Problem 2}
+\subparagraph{Question} What is the ratio of the electrostatic force of repulsion between two electrons to their gravitational force of attraction? Should this effect have been accounted for in Coulomb's experiment?
+
+\subparagraph{Given} 
+Coulomb's Law: 
+\begin{equation}
+\vec{F}_{2\,1\,C} = 
+\frac{q_{1}q_{2}\hat{r}_{2\,1}}
+{4 \pi \epsilon_{0} \lvert r_{2\,1} \rvert^{2}}
+\end{equation}
+Newton's law of universal gravitation: 
+\begin{equation}
+\vec{F}_{2\,1\,G} = 
+G\frac{m_{1}m_{2}\hat{r}_{2\,1}}
+{\lvert r_{2\,1} \rvert^{2}}
+\end{equation}
+
+Constants: 
+$e = 1.6022 \times 10^{-19}\,C$,
+$m_{e} = 9.1094 \times 10^{-31}\,kg$,
+$G = 6.6726 \times 10^{-11}\,m^{3}\,s^{-2}\,kg^{-1}$,
+$\epsilon_{0} = 8.8542 \times 10^{-12}\,F\,m^{-1}$
+
+\subparagraph{Answer}
+Divide Coulomb's law by Newton's law to find the ratio 
+$\frac{\vec{F}_{2\,1\,C}}{\vec{F}_{2\,1\,G}}$
+
+\begin{equation}
+\frac{\vec{F}_{2\,1\,C}}{\vec{F}_{2\,1\,G}} =
+\frac{
+   \frac{q_{1}q_{2}\hat{r}_{2\,1}}
+    {4 \pi \epsilon_{0} \lvert r_{2\,1} \rvert^{2}} 
+}
+{G\frac{m_{1} m_{2} \hat{r}_{2\,1}}
+{\lvert r_{2\,1} \rvert^{2}}}
+\end{equation}
+
+Canceling like-terms reduces the equation to
+
+\begin{equation}
+\frac{\vec{F}_{2\,1\,C}}{\vec{F}_{2\,1\,G}} =
+\frac{q_{1}q_{2}}{G 4 \pi \epsilon_{0} m_{1} m_{2}}
+\end{equation}
+
+Plugging in our constants leads to the final answer
+
+\begin{equation}
+\frac{\vec{F}_{2\,1\,C}}{\vec{F}_{2\,1\,G}} =
+\frac{e^{2}}{G 4 \pi \epsilon_{0} m_{e}^{2}} =
+4.1668 \times 10^{42}
+\end{equation}
+
+Therefore, there is no need to account for gravity's minuscule effect.
+
+\paragraph{Problem 3}
+
+
+
+\paragraph{Problem 4}
+
+
+
+\paragraph{Problem 5}
+
+% references, American Institute of Physics style = phaip.bst
+% \bibliographystyle{phaip}
+% \bibliography{ref}
+
+\end{document}

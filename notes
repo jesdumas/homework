@@ -1,0 +1,10 @@
+
+% coulomb
+% $\vec{F}_{2\,1\,C} = 
+% \frac{q_{1}q_{2}\hat{r}_{2\,1}}
+% {4 \pi \epsilon_{0} \lvert r_{2\,1} \rvert^{2}}$
+
+% newton
+% $\vec{F}_{2\,1\,G} = 
+% G\frac{m_{1}m_{2}\hat{r}_{2\,1}}
+% {\lvert r_{2\,1} \rvert^{2}}$
